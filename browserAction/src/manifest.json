@@ -7,10 +7,13 @@
     "16": "icons/icon-16.png",
     "128": "icons/icon-128.png"
   },
-  "background": {
-    "page": "background.html"
+  "app": {
+    "background": {
+      "scripts": ["main.js"]
+    }
   },
   "permissions": [
+    "contextMenus",
     "tabs",
     "storage",
     "http://*/*",
@@ -18,7 +21,7 @@
   ],
   "options_ui": {
     "page": "options.html",
-    "open_in_tab": false
+    "open_in_tab": true
   },
   "content_scripts": [{
     "matches": [
